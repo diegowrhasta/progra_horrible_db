@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<!DOCTYPE orion-application PUBLIC "-//Evermind//DTD J2EE Application runtime 1.2//EN" "http://xmlns.oracle.com/ias/dtds/orion-application.dtd">
+<orion-application>
+   <web-module id="DiegoSamuelBalderramaQuino-taller3-webapp" path="E:\jdev\jdev\mywork\DiegoSamuelBalderramaQuino\taller3\public_html"/>
+  <log>
+    <file path="DiegoSamuelBalderramaQuino-oc4j-app.log"/>
+  </log>
+   <data-sources path="E:\jdev\jdev\mywork\DiegoSamuelBalderramaQuino\DiegoSamuelBalderramaQuino-data-sources.xml"/>
+</orion-application>

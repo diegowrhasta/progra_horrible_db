@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="IngresoActionForm" type="mypackage1.IngresoActionForm"/>
+    <form-bean name="SuccessActionForm" type="mypackage1.SuccessActionForm"/>
+    <form-bean name="listProductActionForm" type="mypackage1.listProductActionForm"/>
+    <form-bean name="ListOrdersActionForm" type="mypackage1.ListOrdersActionForm"/>
+    <form-bean name="UpdateDataActionForm" type="mypackage1.UpdateDataActionForm"/>
+    <form-bean name="UpdateActionForm" type="mypackage1.UpdateActionForm"/>
+  </form-beans>
+  <global-forwards>
+    <forward name="success" path="/success.jsp"/>
+    <forward name="failure" path="/failure.jsp"/>
+    <forward name="listProduct" path="/listProduct.jsp"/>
+    <forward name="listOrders" path="/listOrders.jsp"/>
+    <forward name="updateData" path="/updateData.jsp"/>
+    <forward name="ingreso" path="/ingreso.jsp"/>
+  </global-forwards>
+  <action-mappings>
+    <action path="/ingreso" type="mypackage1.IngresoAction" name="IngresoActionForm" scope="request"/>
+    <action path="/menu" type="mypackage1.SuccessAction" name="SuccessActionForm" scope="request"/>
+    <action name="listProductActionForm" path="/listProduct" scope="request" type="oracle.jbo.html.struts11.actions.TransactionAction"/>
+    <action path="/actualizar" type="mypackage1.UpdateAction" name="UpdateActionForm" scope="request"/>
+  </action-mappings>
+  <message-resources parameter="mypackage1.ApplicationResources"/>
+</struts-config>
